@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9922113A28CCE8BA00F32005 /* DiscogsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922113928CCE8BA00F32005 /* DiscogsApp.swift */; };
+		9922113C28CCE8BA00F32005 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922113B28CCE8BA00F32005 /* ContentView.swift */; };
+		9922113E28CCE8BB00F32005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9922113D28CCE8BB00F32005 /* Assets.xcassets */; };
+		9922114128CCE8BB00F32005 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9922114028CCE8BB00F32005 /* Preview Assets.xcassets */; };
+		9922114B28CCE8BB00F32005 /* DiscogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922114A28CCE8BB00F32005 /* DiscogsTests.swift */; };
+		9922115528CCE8BB00F32005 /* DiscogsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922115428CCE8BB00F32005 /* DiscogsUITests.swift */; };
+		9922115728CCE8BB00F32005 /* DiscogsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922115628CCE8BB00F32005 /* DiscogsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9922114728CCE8BB00F32005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9922112E28CCE8BA00F32005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9922113528CCE8BA00F32005;
+			remoteInfo = Discogs;
+		};
+		9922115128CCE8BB00F32005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9922112E28CCE8BA00F32005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9922113528CCE8BA00F32005;
+			remoteInfo = Discogs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9922113628CCE8BA00F32005 /* Discogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9922113928CCE8BA00F32005 /* DiscogsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsApp.swift; sourceTree = "<group>"; };
+		9922113B28CCE8BA00F32005 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9922113D28CCE8BB00F32005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9922114028CCE8BB00F32005 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9922114628CCE8BB00F32005 /* DiscogsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscogsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9922114A28CCE8BB00F32005 /* DiscogsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsTests.swift; sourceTree = "<group>"; };
+		9922115028CCE8BB00F32005 /* DiscogsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscogsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9922115428CCE8BB00F32005 /* DiscogsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsUITests.swift; sourceTree = "<group>"; };
+		9922115628CCE8BB00F32005 /* DiscogsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9922113328CCE8BA00F32005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9922114328CCE8BB00F32005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9922114D28CCE8BB00F32005 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9922112D28CCE8BA00F32005 = {
+			isa = PBXGroup;
+			children = (
+				9922113828CCE8BA00F32005 /* Discogs */,
+				9922114928CCE8BB00F32005 /* DiscogsTests */,
+				9922115328CCE8BB00F32005 /* DiscogsUITests */,
+				9922113728CCE8BA00F32005 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9922113728CCE8BA00F32005 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9922113628CCE8BA00F32005 /* Discogs.app */,
+				9922114628CCE8BB00F32005 /* DiscogsTests.xctest */,
+				9922115028CCE8BB00F32005 /* DiscogsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9922113828CCE8BA00F32005 /* Discogs */ = {
+			isa = PBXGroup;
+			children = (
+				9922113928CCE8BA00F32005 /* DiscogsApp.swift */,
+				9922113B28CCE8BA00F32005 /* ContentView.swift */,
+				9922113D28CCE8BB00F32005 /* Assets.xcassets */,
+				9922113F28CCE8BB00F32005 /* Preview Content */,
+			);
+			path = Discogs;
+			sourceTree = "<group>";
+		};
+		9922113F28CCE8BB00F32005 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9922114028CCE8BB00F32005 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9922114928CCE8BB00F32005 /* DiscogsTests */ = {
+			isa = PBXGroup;
+			children = (
+				9922114A28CCE8BB00F32005 /* DiscogsTests.swift */,
+			);
+			path = DiscogsTests;
+			sourceTree = "<group>";
+		};
+		9922115328CCE8BB00F32005 /* DiscogsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9922115428CCE8BB00F32005 /* DiscogsUITests.swift */,
+				9922115628CCE8BB00F32005 /* DiscogsUITestsLaunchTests.swift */,
+			);
+			path = DiscogsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9922113528CCE8BA00F32005 /* Discogs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9922115A28CCE8BB00F32005 /* Build configuration list for PBXNativeTarget "Discogs" */;
+			buildPhases = (
+				9922113228CCE8BA00F32005 /* Sources */,
+				9922113328CCE8BA00F32005 /* Frameworks */,
+				9922113428CCE8BA00F32005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Discogs;
+			productName = Discogs;
+			productReference = 9922113628CCE8BA00F32005 /* Discogs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9922114528CCE8BB00F32005 /* DiscogsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9922115D28CCE8BB00F32005 /* Build configuration list for PBXNativeTarget "DiscogsTests" */;
+			buildPhases = (
+				9922114228CCE8BB00F32005 /* Sources */,
+				9922114328CCE8BB00F32005 /* Frameworks */,
+				9922114428CCE8BB00F32005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9922114828CCE8BB00F32005 /* PBXTargetDependency */,
+			);
+			name = DiscogsTests;
+			productName = DiscogsTests;
+			productReference = 9922114628CCE8BB00F32005 /* DiscogsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9922114F28CCE8BB00F32005 /* DiscogsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9922116028CCE8BB00F32005 /* Build configuration list for PBXNativeTarget "DiscogsUITests" */;
+			buildPhases = (
+				9922114C28CCE8BB00F32005 /* Sources */,
+				9922114D28CCE8BB00F32005 /* Frameworks */,
+				9922114E28CCE8BB00F32005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9922115228CCE8BB00F32005 /* PBXTargetDependency */,
+			);
+			name = DiscogsUITests;
+			productName = DiscogsUITests;
+			productReference = 9922115028CCE8BB00F32005 /* DiscogsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9922112E28CCE8BA00F32005 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					9922113528CCE8BA00F32005 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					9922114528CCE8BB00F32005 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 9922113528CCE8BA00F32005;
+					};
+					9922114F28CCE8BB00F32005 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 9922113528CCE8BA00F32005;
+					};
+				};
+			};
+			buildConfigurationList = 9922113128CCE8BA00F32005 /* Build configuration list for PBXProject "Discogs" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9922112D28CCE8BA00F32005;
+			productRefGroup = 9922113728CCE8BA00F32005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9922113528CCE8BA00F32005 /* Discogs */,
+				9922114528CCE8BB00F32005 /* DiscogsTests */,
+				9922114F28CCE8BB00F32005 /* DiscogsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9922113428CCE8BA00F32005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9922114128CCE8BB00F32005 /* Preview Assets.xcassets in Resources */,
+				9922113E28CCE8BB00F32005 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9922114428CCE8BB00F32005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9922114E28CCE8BB00F32005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9922113228CCE8BA00F32005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9922113C28CCE8BA00F32005 /* ContentView.swift in Sources */,
+				9922113A28CCE8BA00F32005 /* DiscogsApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9922114228CCE8BB00F32005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9922114B28CCE8BB00F32005 /* DiscogsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9922114C28CCE8BB00F32005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9922115528CCE8BB00F32005 /* DiscogsUITests.swift in Sources */,
+				9922115728CCE8BB00F32005 /* DiscogsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9922114828CCE8BB00F32005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9922113528CCE8BA00F32005 /* Discogs */;
+			targetProxy = 9922114728CCE8BB00F32005 /* PBXContainerItemProxy */;
+		};
+		9922115228CCE8BB00F32005 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9922113528CCE8BA00F32005 /* Discogs */;
+			targetProxy = 9922115128CCE8BB00F32005 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9922115828CCE8BB00F32005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9922115928CCE8BB00F32005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9922115B28CCE8BB00F32005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Discogs/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.Discogs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9922115C28CCE8BB00F32005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Discogs/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.Discogs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9922115E28CCE8BB00F32005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.DiscogsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Discogs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Discogs";
+			};
+			name = Debug;
+		};
+		9922115F28CCE8BB00F32005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.DiscogsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Discogs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Discogs";
+			};
+			name = Release;
+		};
+		9922116128CCE8BB00F32005 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.DiscogsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Discogs;
+			};
+			name = Debug;
+		};
+		9922116228CCE8BB00F32005 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.DiscogsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Discogs;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9922113128CCE8BA00F32005 /* Build configuration list for PBXProject "Discogs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9922115828CCE8BB00F32005 /* Debug */,
+				9922115928CCE8BB00F32005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9922115A28CCE8BB00F32005 /* Build configuration list for PBXNativeTarget "Discogs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9922115B28CCE8BB00F32005 /* Debug */,
+				9922115C28CCE8BB00F32005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9922115D28CCE8BB00F32005 /* Build configuration list for PBXNativeTarget "DiscogsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9922115E28CCE8BB00F32005 /* Debug */,
+				9922115F28CCE8BB00F32005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9922116028CCE8BB00F32005 /* Build configuration list for PBXNativeTarget "DiscogsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9922116128CCE8BB00F32005 /* Debug */,
+				9922116228CCE8BB00F32005 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9922112E28CCE8BA00F32005 /* Project object */;
+}
