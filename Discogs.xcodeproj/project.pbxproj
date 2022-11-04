@@ -8,12 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		9922113A28CCE8BA00F32005 /* DiscogsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922113928CCE8BA00F32005 /* DiscogsApp.swift */; };
-		9922113C28CCE8BA00F32005 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922113B28CCE8BA00F32005 /* ContentView.swift */; };
 		9922113E28CCE8BB00F32005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9922113D28CCE8BB00F32005 /* Assets.xcassets */; };
 		9922114128CCE8BB00F32005 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9922114028CCE8BB00F32005 /* Preview Assets.xcassets */; };
 		9922114B28CCE8BB00F32005 /* DiscogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922114A28CCE8BB00F32005 /* DiscogsTests.swift */; };
 		9922115528CCE8BB00F32005 /* DiscogsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922115428CCE8BB00F32005 /* DiscogsUITests.swift */; };
 		9922115728CCE8BB00F32005 /* DiscogsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922115628CCE8BB00F32005 /* DiscogsUITestsLaunchTests.swift */; };
+		9922116628CCE9AA00F32005 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922116528CCE9AA00F32005 /* Listing.swift */; };
+		9922116828CCE9E900F32005 /* ListingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922116728CCE9E900F32005 /* ListingService.swift */; };
+		9922116A28CDD2AD00F32005 /* ReleaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922116928CDD2AD00F32005 /* ReleaseView.swift */; };
+		9922116C28D26A0600F32005 /* ListingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922116B28D26A0600F32005 /* ListingsView.swift */; };
+		99382DA1290940C4008F3376 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99382DA0290940C4008F3376 /* ImageLoader.swift */; };
+		9986AB0F28F8773D0081D01C /* SellersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9986AB0E28F8773D0081D01C /* SellersView.swift */; };
+		99D5B12B28F5555300E07E76 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5B12A28F5555300E07E76 /* Price.swift */; };
+		99D5B12D28F5558000E07E76 /* InventoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5B12C28F5558000E07E76 /* InventoryResponse.swift */; };
+		99D5B12F28F555A400E07E76 /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5B12E28F555A400E07E76 /* Stats.swift */; };
+		99D5B13528F56DB400E07E76 /* ListingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5B13428F56DB400E07E76 /* ListingsViewModel.swift */; };
+		99D5B13728F5E67100E07E76 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5B13628F5E67100E07E76 /* Network.swift */; };
+		99D5B13928F5EBD900E07E76 /* ListingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5B13828F5EBD900E07E76 /* ListingItemView.swift */; };
+		99DE2C1A28F6E07400EA0DD2 /* ListingItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE2C1928F6E07400EA0DD2 /* ListingItemViewModel.swift */; };
+		99E00E0928F6FB8000DC0545 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E00E0828F6FB8000DC0545 /* Dependencies.swift */; };
+		99E00E0B28F6FBDF00DC0545 /* RateLimitHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E00E0A28F6FBDF00DC0545 /* RateLimitHandler.swift */; };
+		99E00E0D28F6FC6600DC0545 /* ResponseListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E00E0C28F6FC6600DC0545 /* ResponseListener.swift */; };
+		99E00E0F28F712D600DC0545 /* RequestValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E00E0E28F712D600DC0545 /* RequestValidator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +52,6 @@
 /* Begin PBXFileReference section */
 		9922113628CCE8BA00F32005 /* Discogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9922113928CCE8BA00F32005 /* DiscogsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsApp.swift; sourceTree = "<group>"; };
-		9922113B28CCE8BA00F32005 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9922113D28CCE8BB00F32005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9922114028CCE8BB00F32005 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9922114628CCE8BB00F32005 /* DiscogsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscogsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +59,25 @@
 		9922115028CCE8BB00F32005 /* DiscogsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscogsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9922115428CCE8BB00F32005 /* DiscogsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsUITests.swift; sourceTree = "<group>"; };
 		9922115628CCE8BB00F32005 /* DiscogsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9922116528CCE9AA00F32005 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		9922116728CCE9E900F32005 /* ListingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingService.swift; sourceTree = "<group>"; };
+		9922116928CDD2AD00F32005 /* ReleaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseView.swift; sourceTree = "<group>"; };
+		9922116B28D26A0600F32005 /* ListingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsView.swift; sourceTree = "<group>"; };
+		99382DA0290940C4008F3376 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		9961CD78291514C2000EA35B /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
+		9961CD7929151598000EA35B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9986AB0E28F8773D0081D01C /* SellersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellersView.swift; sourceTree = "<group>"; };
+		99D5B12A28F5555300E07E76 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
+		99D5B12C28F5558000E07E76 /* InventoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryResponse.swift; sourceTree = "<group>"; };
+		99D5B12E28F555A400E07E76 /* Stats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stats.swift; sourceTree = "<group>"; };
+		99D5B13428F56DB400E07E76 /* ListingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsViewModel.swift; sourceTree = "<group>"; };
+		99D5B13628F5E67100E07E76 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		99D5B13828F5EBD900E07E76 /* ListingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingItemView.swift; sourceTree = "<group>"; };
+		99DE2C1928F6E07400EA0DD2 /* ListingItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingItemViewModel.swift; sourceTree = "<group>"; };
+		99E00E0828F6FB8000DC0545 /* Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		99E00E0A28F6FBDF00DC0545 /* RateLimitHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateLimitHandler.swift; sourceTree = "<group>"; };
+		99E00E0C28F6FC6600DC0545 /* ResponseListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseListener.swift; sourceTree = "<group>"; };
+		99E00E0E28F712D600DC0545 /* RequestValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestValidator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +108,7 @@
 		9922112D28CCE8BA00F32005 = {
 			isa = PBXGroup;
 			children = (
+				9961CD78291514C2000EA35B /* Keys.xcconfig */,
 				9922113828CCE8BA00F32005 /* Discogs */,
 				9922114928CCE8BB00F32005 /* DiscogsTests */,
 				9922115328CCE8BB00F32005 /* DiscogsUITests */,
@@ -94,10 +129,18 @@
 		9922113828CCE8BA00F32005 /* Discogs */ = {
 			isa = PBXGroup;
 			children = (
+				9961CD7929151598000EA35B /* Info.plist */,
+				9986AB0D28F8772C0081D01C /* SellersView */,
+				99DE2C1B28F6E09900EA0DD2 /* ReleaseView */,
+				99DE2C1828F6E06100EA0DD2 /* ListingItemView */,
+				99DE2C1728F6E04E00EA0DD2 /* ListingsView */,
+				99D5B13128F55F2E00E07E76 /* Utilities */,
+				99D5B12828F5553400E07E76 /* Networking */,
 				9922113928CCE8BA00F32005 /* DiscogsApp.swift */,
-				9922113B28CCE8BA00F32005 /* ContentView.swift */,
 				9922113D28CCE8BB00F32005 /* Assets.xcassets */,
 				9922113F28CCE8BB00F32005 /* Preview Content */,
+				99E00E0828F6FB8000DC0545 /* Dependencies.swift */,
+				99E00E0A28F6FBDF00DC0545 /* RateLimitHandler.swift */,
 			);
 			path = Discogs;
 			sourceTree = "<group>";
@@ -125,6 +168,79 @@
 				9922115628CCE8BB00F32005 /* DiscogsUITestsLaunchTests.swift */,
 			);
 			path = DiscogsUITests;
+			sourceTree = "<group>";
+		};
+		9986AB0D28F8772C0081D01C /* SellersView */ = {
+			isa = PBXGroup;
+			children = (
+				9986AB0E28F8773D0081D01C /* SellersView.swift */,
+			);
+			path = SellersView;
+			sourceTree = "<group>";
+		};
+		99D5B12828F5553400E07E76 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				99D5B13028F5565500E07E76 /* Services */,
+				99D5B12928F5554000E07E76 /* Models */,
+				99D5B13628F5E67100E07E76 /* Network.swift */,
+				99E00E0C28F6FC6600DC0545 /* ResponseListener.swift */,
+				99E00E0E28F712D600DC0545 /* RequestValidator.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		99D5B12928F5554000E07E76 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9922116528CCE9AA00F32005 /* Listing.swift */,
+				99D5B12A28F5555300E07E76 /* Price.swift */,
+				99D5B12C28F5558000E07E76 /* InventoryResponse.swift */,
+				99D5B12E28F555A400E07E76 /* Stats.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		99D5B13028F5565500E07E76 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9922116728CCE9E900F32005 /* ListingService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		99D5B13128F55F2E00E07E76 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				99382DA0290940C4008F3376 /* ImageLoader.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		99DE2C1728F6E04E00EA0DD2 /* ListingsView */ = {
+			isa = PBXGroup;
+			children = (
+				9922116B28D26A0600F32005 /* ListingsView.swift */,
+				99D5B13428F56DB400E07E76 /* ListingsViewModel.swift */,
+			);
+			path = ListingsView;
+			sourceTree = "<group>";
+		};
+		99DE2C1828F6E06100EA0DD2 /* ListingItemView */ = {
+			isa = PBXGroup;
+			children = (
+				99D5B13828F5EBD900E07E76 /* ListingItemView.swift */,
+				99DE2C1928F6E07400EA0DD2 /* ListingItemViewModel.swift */,
+			);
+			path = ListingItemView;
+			sourceTree = "<group>";
+		};
+		99DE2C1B28F6E09900EA0DD2 /* ReleaseView */ = {
+			isa = PBXGroup;
+			children = (
+				9922116928CDD2AD00F32005 /* ReleaseView.swift */,
+			);
+			path = ReleaseView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +373,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9922113C28CCE8BA00F32005 /* ContentView.swift in Sources */,
+				99E00E0F28F712D600DC0545 /* RequestValidator.swift in Sources */,
+				99D5B13728F5E67100E07E76 /* Network.swift in Sources */,
+				9922116C28D26A0600F32005 /* ListingsView.swift in Sources */,
+				99D5B12B28F5555300E07E76 /* Price.swift in Sources */,
+				99E00E0928F6FB8000DC0545 /* Dependencies.swift in Sources */,
+				99E00E0D28F6FC6600DC0545 /* ResponseListener.swift in Sources */,
+				9922116A28CDD2AD00F32005 /* ReleaseView.swift in Sources */,
+				99D5B13528F56DB400E07E76 /* ListingsViewModel.swift in Sources */,
+				9922116628CCE9AA00F32005 /* Listing.swift in Sources */,
+				9922116828CCE9E900F32005 /* ListingService.swift in Sources */,
+				99D5B12F28F555A400E07E76 /* Stats.swift in Sources */,
+				9986AB0F28F8773D0081D01C /* SellersView.swift in Sources */,
+				99E00E0B28F6FBDF00DC0545 /* RateLimitHandler.swift in Sources */,
 				9922113A28CCE8BA00F32005 /* DiscogsApp.swift in Sources */,
+				99382DA1290940C4008F3376 /* ImageLoader.swift in Sources */,
+				99D5B12D28F5558000E07E76 /* InventoryResponse.swift in Sources */,
+				99DE2C1A28F6E07400EA0DD2 /* ListingItemViewModel.swift in Sources */,
+				99D5B13928F5EBD900E07E76 /* ListingItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +429,7 @@
 /* Begin XCBuildConfiguration section */
 		9922115828CCE8BB00F32005 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9961CD78291514C2000EA35B /* Keys.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -357,6 +490,7 @@
 		};
 		9922115928CCE8BB00F32005 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9961CD78291514C2000EA35B /* Keys.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -419,6 +553,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Discogs/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Discogs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -432,6 +567,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.Discogs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = targeted;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -447,6 +583,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Discogs/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Discogs/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -460,6 +597,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.Discogs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_STRICT_CONCURRENCY = targeted;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
