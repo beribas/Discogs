@@ -15,60 +15,58 @@ struct ListingsView: View {
     @StateObject var viewModel: ListingsViewModel
     
     var body: some View {
-        NavigationStack {
-            List {
-                ForEach(0..<viewModel.listingItems.count, id: \.self) { index in
-                    let listing = viewModel.listingItems[index]
-                    NavigationLink(value: listing) {
-                        ListingItemView(viewModel: listing)
-                            .onAppear {
-                                viewModel.itemAppeared(at: index)
-                            }
-                    }
-                }
-                if viewModel.fetchingAdditionalItems {
-                    ProgressView().foregroundColor(.black)
+        List {
+            ForEach(0..<viewModel.listingItems.count, id: \.self) { index in
+                let listing = viewModel.listingItems[index]
+                NavigationLink(value: listing) {
+                    ListingItemView(viewModel: listing)
+                        .onAppear {
+                            viewModel.itemAppeared(at: index)
+                        }
                 }
             }
-            .refreshable {
-                await viewModel.fetch()
+            if viewModel.fetchingAdditionalItems {
+                ProgressView().foregroundColor(.black)
             }
-            .searchable(text: $viewModel.searchTerm)
-            .autocorrectionDisabled()
-            .navigationTitle(viewModel.username)
-            .toolbar {
-                if let secondsLeft = viewModel.rateLimitSecondsLeft {
-                    Text(String(secondsLeft)).foregroundColor(.red)
-                }
-            }
-            .toolbar {
-                Button("Sort") {
-                    withAnimation {
-                        viewModel.sort()
-                    }
-                }
-            }
-            .navigationDestination(for: Listing.self) { listing in
-                ReleaseView(release: listing.release)
-            }
-            .overlay {
-                if viewModel.initialFetch {
-                    ProgressView {
-                        Text("Loading... ")
-                    }
-                }
-            }
-            .alert(
-                isPresented: $viewModel.showError,
-                error: viewModel.errorMessage) { _ in
-
-                } message: { error in
-                    Text(error.recoverySuggestion ?? "")
-                }
         }
-        .task {
+        .refreshable {
             await viewModel.fetch()
         }
+        .searchable(text: $viewModel.searchTerm)
+        .autocorrectionDisabled()
+        .navigationTitle(viewModel.username)
+        .toolbar {
+            if let secondsLeft = viewModel.rateLimitSecondsLeft {
+                Text(String(secondsLeft)).foregroundColor(.red)
+            }
+        }
+        .toolbar {
+            Button("Sort") {
+                withAnimation {
+                    viewModel.sort()
+                }
+            }
+        }
+        .navigationDestination(for: ListingItemViewModel.self) { model in
+            ReleaseView(release: model.listing.release)
+        }
+        .overlay {
+            if viewModel.initialFetch {
+                ProgressView {
+                    Text("Loading... ")
+                }
+            }
+        }
+        .alert(
+            isPresented: $viewModel.showError,
+            error: viewModel.errorMessage) { _ in
+
+            } message: { error in
+                Text(error.recoverySuggestion ?? "")
+            }
+            .task {
+                await viewModel.fetch()
+            }
     }
 }
 
