@@ -1,4 +1,5 @@
 import ComposableArchitecture
+import Core
 
 struct InventoryFeature: ReducerProtocol {
     struct State: Equatable {}

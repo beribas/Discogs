@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		990C18FC29196C310098532B /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 990C18FB29196C310098532B /* Core */; };
 		9922113A28CCE8BA00F32005 /* DiscogsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922113928CCE8BA00F32005 /* DiscogsApp.swift */; };
 		9922113E28CCE8BB00F32005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9922113D28CCE8BB00F32005 /* Assets.xcassets */; };
 		9922114128CCE8BB00F32005 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9922114028CCE8BB00F32005 /* Preview Assets.xcassets */; };
@@ -124,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9961CDEB2919640B000EA35B /* ComposableArchitecture in Frameworks */,
+				990C18FC29196C310098532B /* Core in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +384,7 @@
 			name = DiscogsTCA;
 			packageProductDependencies = (
 				9961CDEA2919640B000EA35B /* ComposableArchitecture */,
+				990C18FB29196C310098532B /* Core */,
 			);
 			productName = DiscogsTCA;
 			productReference = 9961CDBC2919630A000EA35B /* DiscogsTCA.app */;
@@ -1078,6 +1081,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		990C18FB29196C310098532B /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
 		9961CDEA2919640B000EA35B /* ComposableArchitecture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9961CDE6291963CF000EA35B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
