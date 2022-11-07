@@ -18,6 +18,23 @@
 		9922116A28CDD2AD00F32005 /* ReleaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922116928CDD2AD00F32005 /* ReleaseView.swift */; };
 		9922116C28D26A0600F32005 /* ListingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922116B28D26A0600F32005 /* ListingsView.swift */; };
 		99382DA1290940C4008F3376 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99382DA0290940C4008F3376 /* ImageLoader.swift */; };
+		9961CDBF2919630A000EA35B /* DiscogsTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961CDBE2919630A000EA35B /* DiscogsTCAApp.swift */; };
+		9961CDC12919630A000EA35B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961CDC02919630A000EA35B /* ContentView.swift */; };
+		9961CDC32919630A000EA35B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9961CDC22919630A000EA35B /* Assets.xcassets */; };
+		9961CDC62919630A000EA35B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9961CDC52919630A000EA35B /* Preview Assets.xcassets */; };
+		9961CDD02919630B000EA35B /* DiscogsTCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961CDCF2919630B000EA35B /* DiscogsTCATests.swift */; };
+		9961CDDA2919630B000EA35B /* DiscogsTCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961CDD92919630B000EA35B /* DiscogsTCAUITests.swift */; };
+		9961CDDC2919630B000EA35B /* DiscogsTCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961CDDB2919630B000EA35B /* DiscogsTCAUITestsLaunchTests.swift */; };
+		9961CDEB2919640B000EA35B /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9961CDEA2919640B000EA35B /* ComposableArchitecture */; };
+		9961CDEE29196431000EA35B /* InventoryFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961CDED29196431000EA35B /* InventoryFeature.swift */; };
+		9961CDEF29196482000EA35B /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922116528CCE9AA00F32005 /* Listing.swift */; };
+		9961CDF029196482000EA35B /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5B12A28F5555300E07E76 /* Price.swift */; };
+		9961CDF129196482000EA35B /* Stats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5B12E28F555A400E07E76 /* Stats.swift */; };
+		9961CDF229196482000EA35B /* InventoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5B12C28F5558000E07E76 /* InventoryResponse.swift */; };
+		9961CDF3291964FD000EA35B /* ListingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922116728CCE9E900F32005 /* ListingService.swift */; };
+		9961CDF429196508000EA35B /* RequestValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E00E0E28F712D600DC0545 /* RequestValidator.swift */; };
+		9961CDF529196508000EA35B /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5B13628F5E67100E07E76 /* Network.swift */; };
+		9961CDF629196508000EA35B /* ResponseListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E00E0C28F6FC6600DC0545 /* ResponseListener.swift */; };
 		9986AB0F28F8773D0081D01C /* SellersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9986AB0E28F8773D0081D01C /* SellersView.swift */; };
 		99D5B12B28F5555300E07E76 /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5B12A28F5555300E07E76 /* Price.swift */; };
 		99D5B12D28F5558000E07E76 /* InventoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5B12C28F5558000E07E76 /* InventoryResponse.swift */; };
@@ -47,6 +64,20 @@
 			remoteGlobalIDString = 9922113528CCE8BA00F32005;
 			remoteInfo = Discogs;
 		};
+		9961CDCC2919630B000EA35B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9922112E28CCE8BA00F32005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9961CDBB2919630A000EA35B;
+			remoteInfo = DiscogsTCA;
+		};
+		9961CDD62919630B000EA35B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9922112E28CCE8BA00F32005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9961CDBB2919630A000EA35B;
+			remoteInfo = DiscogsTCA;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +97,17 @@
 		99382DA0290940C4008F3376 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		9961CD78291514C2000EA35B /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
 		9961CD7929151598000EA35B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9961CDBC2919630A000EA35B /* DiscogsTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscogsTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9961CDBE2919630A000EA35B /* DiscogsTCAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsTCAApp.swift; sourceTree = "<group>"; };
+		9961CDC02919630A000EA35B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9961CDC22919630A000EA35B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9961CDC52919630A000EA35B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9961CDCB2919630B000EA35B /* DiscogsTCATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscogsTCATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9961CDCF2919630B000EA35B /* DiscogsTCATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsTCATests.swift; sourceTree = "<group>"; };
+		9961CDD52919630B000EA35B /* DiscogsTCAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscogsTCAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9961CDD92919630B000EA35B /* DiscogsTCAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsTCAUITests.swift; sourceTree = "<group>"; };
+		9961CDDB2919630B000EA35B /* DiscogsTCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsTCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9961CDED29196431000EA35B /* InventoryFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryFeature.swift; sourceTree = "<group>"; };
 		9986AB0E28F8773D0081D01C /* SellersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellersView.swift; sourceTree = "<group>"; };
 		99D5B12A28F5555300E07E76 /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 		99D5B12C28F5558000E07E76 /* InventoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryResponse.swift; sourceTree = "<group>"; };
@@ -102,6 +144,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9961CDB92919630A000EA35B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9961CDEB2919640B000EA35B /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9961CDC82919630B000EA35B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9961CDD22919630B000EA35B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -112,7 +176,11 @@
 				9922113828CCE8BA00F32005 /* Discogs */,
 				9922114928CCE8BB00F32005 /* DiscogsTests */,
 				9922115328CCE8BB00F32005 /* DiscogsUITests */,
+				9961CDBD2919630A000EA35B /* DiscogsTCA */,
+				9961CDCE2919630B000EA35B /* DiscogsTCATests */,
+				9961CDD82919630B000EA35B /* DiscogsTCAUITests */,
 				9922113728CCE8BA00F32005 /* Products */,
+				9961CDE92919640B000EA35B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +190,9 @@
 				9922113628CCE8BA00F32005 /* Discogs.app */,
 				9922114628CCE8BB00F32005 /* DiscogsTests.xctest */,
 				9922115028CCE8BB00F32005 /* DiscogsUITests.xctest */,
+				9961CDBC2919630A000EA35B /* DiscogsTCA.app */,
+				9961CDCB2919630B000EA35B /* DiscogsTCATests.xctest */,
+				9961CDD52919630B000EA35B /* DiscogsTCAUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +239,58 @@
 				9922115628CCE8BB00F32005 /* DiscogsUITestsLaunchTests.swift */,
 			);
 			path = DiscogsUITests;
+			sourceTree = "<group>";
+		};
+		9961CDBD2919630A000EA35B /* DiscogsTCA */ = {
+			isa = PBXGroup;
+			children = (
+				9961CDEC29196420000EA35B /* Inventory */,
+				9961CDBE2919630A000EA35B /* DiscogsTCAApp.swift */,
+				9961CDC02919630A000EA35B /* ContentView.swift */,
+				9961CDC22919630A000EA35B /* Assets.xcassets */,
+				9961CDC42919630A000EA35B /* Preview Content */,
+			);
+			path = DiscogsTCA;
+			sourceTree = "<group>";
+		};
+		9961CDC42919630A000EA35B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9961CDC52919630A000EA35B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9961CDCE2919630B000EA35B /* DiscogsTCATests */ = {
+			isa = PBXGroup;
+			children = (
+				9961CDCF2919630B000EA35B /* DiscogsTCATests.swift */,
+			);
+			path = DiscogsTCATests;
+			sourceTree = "<group>";
+		};
+		9961CDD82919630B000EA35B /* DiscogsTCAUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9961CDD92919630B000EA35B /* DiscogsTCAUITests.swift */,
+				9961CDDB2919630B000EA35B /* DiscogsTCAUITestsLaunchTests.swift */,
+			);
+			path = DiscogsTCAUITests;
+			sourceTree = "<group>";
+		};
+		9961CDE92919640B000EA35B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9961CDEC29196420000EA35B /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				9961CDED29196431000EA35B /* InventoryFeature.swift */,
+			);
+			path = Inventory;
 			sourceTree = "<group>";
 		};
 		9986AB0D28F8772C0081D01C /* SellersView */ = {
@@ -259,6 +382,8 @@
 			dependencies = (
 			);
 			name = Discogs;
+			packageProductDependencies = (
+			);
 			productName = Discogs;
 			productReference = 9922113628CCE8BA00F32005 /* Discogs.app */;
 			productType = "com.apple.product-type.application";
@@ -299,6 +424,62 @@
 			productReference = 9922115028CCE8BB00F32005 /* DiscogsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9961CDBB2919630A000EA35B /* DiscogsTCA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9961CDE32919630B000EA35B /* Build configuration list for PBXNativeTarget "DiscogsTCA" */;
+			buildPhases = (
+				9961CDB82919630A000EA35B /* Sources */,
+				9961CDB92919630A000EA35B /* Frameworks */,
+				9961CDBA2919630A000EA35B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DiscogsTCA;
+			packageProductDependencies = (
+				9961CDEA2919640B000EA35B /* ComposableArchitecture */,
+			);
+			productName = DiscogsTCA;
+			productReference = 9961CDBC2919630A000EA35B /* DiscogsTCA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9961CDCA2919630B000EA35B /* DiscogsTCATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9961CDE42919630B000EA35B /* Build configuration list for PBXNativeTarget "DiscogsTCATests" */;
+			buildPhases = (
+				9961CDC72919630B000EA35B /* Sources */,
+				9961CDC82919630B000EA35B /* Frameworks */,
+				9961CDC92919630B000EA35B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9961CDCD2919630B000EA35B /* PBXTargetDependency */,
+			);
+			name = DiscogsTCATests;
+			productName = DiscogsTCATests;
+			productReference = 9961CDCB2919630B000EA35B /* DiscogsTCATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9961CDD42919630B000EA35B /* DiscogsTCAUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9961CDE52919630B000EA35B /* Build configuration list for PBXNativeTarget "DiscogsTCAUITests" */;
+			buildPhases = (
+				9961CDD12919630B000EA35B /* Sources */,
+				9961CDD22919630B000EA35B /* Frameworks */,
+				9961CDD32919630B000EA35B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9961CDD72919630B000EA35B /* PBXTargetDependency */,
+			);
+			name = DiscogsTCAUITests;
+			productName = DiscogsTCAUITests;
+			productReference = 9961CDD52919630B000EA35B /* DiscogsTCAUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -306,7 +487,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					9922113528CCE8BA00F32005 = {
@@ -320,6 +501,17 @@
 						CreatedOnToolsVersion = 14.0;
 						TestTargetID = 9922113528CCE8BA00F32005;
 					};
+					9961CDBB2919630A000EA35B = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					9961CDCA2919630B000EA35B = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9961CDBB2919630A000EA35B;
+					};
+					9961CDD42919630B000EA35B = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 9961CDBB2919630A000EA35B;
+					};
 				};
 			};
 			buildConfigurationList = 9922113128CCE8BA00F32005 /* Build configuration list for PBXProject "Discogs" */;
@@ -331,6 +523,9 @@
 				Base,
 			);
 			mainGroup = 9922112D28CCE8BA00F32005;
+			packageReferences = (
+				9961CDE6291963CF000EA35B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 9922113728CCE8BA00F32005 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,6 +533,9 @@
 				9922113528CCE8BA00F32005 /* Discogs */,
 				9922114528CCE8BB00F32005 /* DiscogsTests */,
 				9922114F28CCE8BB00F32005 /* DiscogsUITests */,
+				9961CDBB2919630A000EA35B /* DiscogsTCA */,
+				9961CDCA2919630B000EA35B /* DiscogsTCATests */,
+				9961CDD42919630B000EA35B /* DiscogsTCAUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -360,6 +558,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9922114E28CCE8BB00F32005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9961CDBA2919630A000EA35B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9961CDC62919630A000EA35B /* Preview Assets.xcassets in Resources */,
+				9961CDC32919630A000EA35B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9961CDC92919630B000EA35B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9961CDD32919630B000EA35B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -411,6 +632,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9961CDB82919630A000EA35B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9961CDF529196508000EA35B /* Network.swift in Sources */,
+				9961CDF629196508000EA35B /* ResponseListener.swift in Sources */,
+				9961CDEE29196431000EA35B /* InventoryFeature.swift in Sources */,
+				9961CDF129196482000EA35B /* Stats.swift in Sources */,
+				9961CDF3291964FD000EA35B /* ListingService.swift in Sources */,
+				9961CDF429196508000EA35B /* RequestValidator.swift in Sources */,
+				9961CDF229196482000EA35B /* InventoryResponse.swift in Sources */,
+				9961CDC12919630A000EA35B /* ContentView.swift in Sources */,
+				9961CDEF29196482000EA35B /* Listing.swift in Sources */,
+				9961CDF029196482000EA35B /* Price.swift in Sources */,
+				9961CDBF2919630A000EA35B /* DiscogsTCAApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9961CDC72919630B000EA35B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9961CDD02919630B000EA35B /* DiscogsTCATests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9961CDD12919630B000EA35B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9961CDDC2919630B000EA35B /* DiscogsTCAUITestsLaunchTests.swift in Sources */,
+				9961CDDA2919630B000EA35B /* DiscogsTCAUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -423,6 +679,16 @@
 			isa = PBXTargetDependency;
 			target = 9922113528CCE8BA00F32005 /* Discogs */;
 			targetProxy = 9922115128CCE8BB00F32005 /* PBXContainerItemProxy */;
+		};
+		9961CDCD2919630B000EA35B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9961CDBB2919630A000EA35B /* DiscogsTCA */;
+			targetProxy = 9961CDCC2919630B000EA35B /* PBXContainerItemProxy */;
+		};
+		9961CDD72919630B000EA35B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9961CDBB2919630A000EA35B /* DiscogsTCA */;
+			targetProxy = 9961CDD62919630B000EA35B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -675,6 +941,138 @@
 			};
 			name = Release;
 		};
+		9961CDDD2919630B000EA35B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DiscogsTCA/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.DiscogsTCA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9961CDDE2919630B000EA35B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"DiscogsTCA/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.DiscogsTCA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9961CDDF2919630B000EA35B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.DiscogsTCATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiscogsTCA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DiscogsTCA";
+			};
+			name = Debug;
+		};
+		9961CDE02919630B000EA35B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.DiscogsTCATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiscogsTCA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DiscogsTCA";
+			};
+			name = Release;
+		};
+		9961CDE12919630B000EA35B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.DiscogsTCAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DiscogsTCA;
+			};
+			name = Debug;
+		};
+		9961CDE22919630B000EA35B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.DiscogsTCAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DiscogsTCA;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -714,7 +1112,53 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		9961CDE32919630B000EA35B /* Build configuration list for PBXNativeTarget "DiscogsTCA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9961CDDD2919630B000EA35B /* Debug */,
+				9961CDDE2919630B000EA35B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9961CDE42919630B000EA35B /* Build configuration list for PBXNativeTarget "DiscogsTCATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9961CDDF2919630B000EA35B /* Debug */,
+				9961CDE02919630B000EA35B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9961CDE52919630B000EA35B /* Build configuration list for PBXNativeTarget "DiscogsTCAUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9961CDE12919630B000EA35B /* Debug */,
+				9961CDE22919630B000EA35B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9961CDE6291963CF000EA35B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.45.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9961CDEA2919640B000EA35B /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9961CDE6291963CF000EA35B /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9922112E28CCE8BA00F32005 /* Project object */;
 }

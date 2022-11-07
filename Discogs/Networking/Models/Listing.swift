@@ -1,6 +1,5 @@
 import Foundation
 
-// MARK: - Welcome
 struct Listing: Decodable {
     let price: Price
     let sleeveCondition: String
