@@ -1,16 +1,16 @@
 import Foundation
 import Combine
 
-struct RateLimitReachedError: Error {
+public struct RateLimitReachedError: Error {
     let secondsLeft: Int
 }
 
-protocol RateLimitHandlerType: Actor {
+public protocol RateLimitHandlerType: Actor {
     var rateLimitTimerSecondsLeft: AnyPublisher<Int?, Never> { get }
 }
 
-actor RateLimitHandler: RateLimitHandlerType, ResponseListener, RequestValidator {
-    var rateLimitTimerSecondsLeft: AnyPublisher<Int?, Never> { timerSubject.eraseToAnyPublisher() }
+public actor RateLimitHandler: RateLimitHandlerType, ResponseListener, RequestValidator {
+    public var rateLimitTimerSecondsLeft: AnyPublisher<Int?, Never> { timerSubject.eraseToAnyPublisher() }
     private let timerSubject = PassthroughSubject<Int?, Never>()
     private let timer = Timer.publish(every: 1, on: .main, in: .default)
     private var lastLimitReachedDate: Date?

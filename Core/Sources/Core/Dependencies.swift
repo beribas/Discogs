@@ -1,13 +1,14 @@
 import Foundation
 
-class Dependencies {
-    static let shared: Dependencies = .init()
+public class Dependencies {
+    public static let shared: Dependencies = .init()
     private let network: Networking
-    let listingService: ListingServiceType
-    let rateLimitHandler = RateLimitHandler()
+    public let listingService: ListingServiceType
+    public let rateLimitHandler = RateLimitHandler()
 
     init() {
         network = Network(requestValidator: rateLimitHandler, responseListener: rateLimitHandler)
         listingService = ListingService(network: network)
     }
 }
+

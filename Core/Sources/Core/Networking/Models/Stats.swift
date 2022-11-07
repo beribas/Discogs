@@ -1,9 +1,9 @@
 import Foundation
 
-struct Stats: Decodable {
-    let lowestPrice: Price
-    let numForSale: Int
-    let blockedFromSale: Bool
+public struct Stats: Decodable {
+    public let lowestPrice: Price
+    public let numForSale: Int
+    public let blockedFromSale: Bool
     
     enum CodingKeys: String, CodingKey {
         case lowestPrice = "lowest_price"
@@ -12,7 +12,7 @@ struct Stats: Decodable {
     }
 }
 
-extension Stats {
+public extension Stats {
     static func mock() -> Self {
         .init(
             lowestPrice: .init(currency: "EUR", value: .random(in: 1.00...9.99)),

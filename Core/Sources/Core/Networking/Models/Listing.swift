@@ -1,13 +1,13 @@
 import Foundation
 
-struct Listing: Decodable {
-    let price: Price
-    let sleeveCondition: String
-    let id: Int
-    let condition: String
-    let shipsFrom: String
-    let shippingPrice: Price
-    let release: Release
+public struct Listing: Decodable {
+    public let price: Price
+    public let sleeveCondition: String
+    public let id: Int
+    public let condition: String
+    public let shipsFrom: String
+    public let shippingPrice: Price
+    public let release: Release
 
     enum CodingKeys: String, CodingKey {
         case price
@@ -20,12 +20,12 @@ struct Listing: Decodable {
 }
 
 // MARK: - Release
-struct Release: Codable {
-    let catalogNumber: String
-    let resourceURL: String
-    let year, id: Int
-    let releaseDescription: String
-    let thumbnail: String
+public struct Release: Codable {
+    public let catalogNumber: String
+    public let resourceURL: String
+    public let year, id: Int
+    public let releaseDescription: String
+    public let thumbnail: String
 
     enum CodingKeys: String, CodingKey {
         case catalogNumber = "catalog_number"
@@ -38,7 +38,7 @@ struct Release: Codable {
 
 // MARK: - Mocks
 
-extension Release {
+public extension Release {
     static func mock() -> Self {
         .init(
             catalogNumber: "NR",
@@ -51,7 +51,7 @@ extension Release {
     }
 }
 
-extension Listing {
+public extension Listing {
     static func mock() -> Self {
         .init(
             price: .init(currency: "EUR", value: 9.99),

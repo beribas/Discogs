@@ -7,12 +7,12 @@ enum NetworkingError: Error {
     case unknown
 }
 
-protocol ListingServiceType {
+public protocol ListingServiceType {
     func getInventory(username: String, page: Int) async throws -> InventoryResponse
     func getStats(releaseId: Int) async throws -> Stats
 }
 
-actor ListingService: ListingServiceType {
+public actor ListingService: ListingServiceType {
     private let network: Networking
     private let oauthtoken: String
     
@@ -24,14 +24,14 @@ actor ListingService: ListingServiceType {
         self.network = network
     }
     
-    func getInventory(username: String, page: Int) async throws -> InventoryResponse {
+    public func getInventory(username: String, page: Int) async throws -> InventoryResponse {
         var request = URLRequest(url: URL(string: "https://api.discogs.com/users/\(username)/inventory?sort=price&sort_order=desc&page=\(page)&per_page=100")!)
         request.setValue(oauthtoken, forHTTPHeaderField: "Authorization")
 
         return try await network.send(request: request, decodable: InventoryResponse.self)
     }
 
-    func getStats(releaseId: Int) async throws -> Stats {
+    public func getStats(releaseId: Int) async throws -> Stats {
         var request = URLRequest(url: URL(string: "https://api.discogs.com/marketplace/stats/\(releaseId)")!)
         request.setValue(oauthtoken, forHTTPHeaderField: "Authorization")
         request.cachePolicy = .returnCacheDataElseLoad

@@ -1,12 +1,12 @@
 import Foundation
 
 // MARK: - Price
-struct Price: Codable {
-    let currency: String
-    let value: Double
+public struct Price: Codable {
+    public let currency: String
+    public let value: Double
 }
 
-extension Price {
+public extension Price {
     var formatted: String {
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency

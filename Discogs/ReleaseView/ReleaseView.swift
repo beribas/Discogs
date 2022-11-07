@@ -1,4 +1,5 @@
 import SwiftUI
+import Core
 
 struct ReleaseView: View {
     @State private var stats: Stats?

@@ -1,4 +1,5 @@
 import SwiftUI
+import Core
 
 class ListingItemViewModel: ObservableObject, Identifiable, Hashable {
     enum StatsState {
