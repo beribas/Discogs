@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Listing: Decodable {
+public struct Listing: Decodable, Equatable {
     public let price: Price
     public let sleeveCondition: String
     public let id: Int
@@ -20,7 +20,7 @@ public struct Listing: Decodable {
 }
 
 // MARK: - Release
-public struct Release: Codable {
+public struct Release: Codable, Equatable {
     public let catalogNumber: String
     public let resourceURL: String
     public let year, id: Int
