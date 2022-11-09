@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		990C18FC29196C310098532B /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 990C18FB29196C310098532B /* Core */; };
 		990C18FE29196C8C0098532B /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990C18FD29196C8C0098532B /* InventoryView.swift */; };
+		990C1902291A549A0098532B /* SellerSelectionFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990C1901291A549A0098532B /* SellerSelectionFeature.swift */; };
+		990C1904291A55350098532B /* SellerSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990C1903291A55350098532B /* SellerSelectionView.swift */; };
 		9922113A28CCE8BA00F32005 /* DiscogsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922113928CCE8BA00F32005 /* DiscogsApp.swift */; };
 		9922113E28CCE8BB00F32005 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9922113D28CCE8BB00F32005 /* Assets.xcassets */; };
 		9922114128CCE8BB00F32005 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9922114028CCE8BB00F32005 /* Preview Assets.xcassets */; };
@@ -68,6 +70,8 @@
 /* Begin PBXFileReference section */
 		990C18FD29196C8C0098532B /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
 		990C18FF29197E1A0098532B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		990C1901291A549A0098532B /* SellerSelectionFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerSelectionFeature.swift; sourceTree = "<group>"; };
+		990C1903291A55350098532B /* SellerSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerSelectionView.swift; sourceTree = "<group>"; };
 		9922113628CCE8BA00F32005 /* Discogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Discogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9922113928CCE8BA00F32005 /* DiscogsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsApp.swift; sourceTree = "<group>"; };
 		9922113D28CCE8BB00F32005 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -149,6 +153,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		990C1900291A547F0098532B /* SellerSelection */ = {
+			isa = PBXGroup;
+			children = (
+				990C1901291A549A0098532B /* SellerSelectionFeature.swift */,
+				990C1903291A55350098532B /* SellerSelectionView.swift */,
+			);
+			path = SellerSelection;
+			sourceTree = "<group>";
+		};
 		9922112D28CCE8BA00F32005 = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +235,7 @@
 		9961CDBD2919630A000EA35B /* DiscogsTCA */ = {
 			isa = PBXGroup;
 			children = (
+				990C1900291A547F0098532B /* SellerSelection */,
 				990C18FF29197E1A0098532B /* Info.plist */,
 				9961CDEC29196420000EA35B /* Inventory */,
 				9961CDBE2919630A000EA35B /* DiscogsTCAApp.swift */,
@@ -577,8 +591,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				990C1904291A55350098532B /* SellerSelectionView.swift in Sources */,
 				9961CDEE29196431000EA35B /* InventoryFeature.swift in Sources */,
 				9961CDC12919630A000EA35B /* ContentView.swift in Sources */,
+				990C1902291A549A0098532B /* SellerSelectionFeature.swift in Sources */,
 				9961CDBF2919630A000EA35B /* DiscogsTCAApp.swift in Sources */,
 				990C18FE29196C8C0098532B /* InventoryView.swift in Sources */,
 			);

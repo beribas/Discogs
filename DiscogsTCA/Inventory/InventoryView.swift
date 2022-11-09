@@ -19,6 +19,7 @@ struct InventoryView: View {
             List(viewStore.listings) { listing in
                 Text(listing.release.releaseDescription)
             }
+            .navigationTitle(viewStore.username)
             .onAppear {
                 viewStore.send(.onAppear)
             }

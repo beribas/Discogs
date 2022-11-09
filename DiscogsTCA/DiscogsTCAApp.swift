@@ -5,10 +5,10 @@ import ComposableArchitecture
 struct DiscogsTCAApp: App {
     var body: some Scene {
         WindowGroup {
-            InventoryView(
+            SellerSelectionView(
                 store: Store(
-                    initialState: .init(username: "", listings: []),
-                    reducer: InventoryFeature()
+                    initialState: .init(username: ""),
+                    reducer: SellerSelectionFeature()
                 )
             )
         }
