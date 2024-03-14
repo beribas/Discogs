@@ -18,18 +18,15 @@ struct SellerSelectionFeature: ReducerProtocol {
             switch action {
             case .textChanged(let string):
                 state.username = string
-                return .none
             case .setNavigationToInventory(true):
                 state.navigationToInventoryActive = true
                 state.inventoryState = .init(username: state.username, listings: [])
-                return .none
             case .setNavigationToInventory(false):
                 state.navigationToInventoryActive = false
                 state.inventoryState = nil
-                return .none
-            case .inventory:
-                return .none
+            case .inventory: break
             }
+            return .none
         }
         .ifLet(\.inventoryState, action: /SellerSelectionFeature.Action.inventory) {
             InventoryFeature()

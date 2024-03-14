@@ -7,7 +7,7 @@ struct InventoryFeature: ReducerProtocol {
         var listings: [Listing]
     }
 
-    enum Action {
+    enum Action: Equatable {
         case onAppear
         case inventoryLoaded(TaskResult<InventoryResponse>)
     }
