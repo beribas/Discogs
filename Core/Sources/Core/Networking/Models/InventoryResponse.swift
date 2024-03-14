@@ -1,6 +1,6 @@
 import Foundation
 
-public struct InventoryResponse: Decodable {
+public struct InventoryResponse: Decodable, Equatable, Sendable {
     public init(pagination: Pagination, listings: [Listing]) {
         self.pagination = pagination
         self.listings = listings
@@ -11,7 +11,7 @@ public struct InventoryResponse: Decodable {
 }
 
 extension InventoryResponse {
-    public struct Pagination: Decodable {
+    public struct Pagination: Decodable, Equatable, Sendable {
         public init(page: Int, pages: Int) {
             self.page = page
             self.pages = pages

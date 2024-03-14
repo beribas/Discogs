@@ -20,17 +20,18 @@
 		9922116A28CDD2AD00F32005 /* ReleaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922116928CDD2AD00F32005 /* ReleaseView.swift */; };
 		9922116C28D26A0600F32005 /* ListingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922116B28D26A0600F32005 /* ListingsView.swift */; };
 		99382DA1290940C4008F3376 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99382DA0290940C4008F3376 /* ImageLoader.swift */; };
+		9952FE8E29228F940000145B /* InventoryFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9952FE8D29228F940000145B /* InventoryFeatureTests.swift */; };
 		9961CDBF2919630A000EA35B /* DiscogsTCAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961CDBE2919630A000EA35B /* DiscogsTCAApp.swift */; };
 		9961CDC12919630A000EA35B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961CDC02919630A000EA35B /* ContentView.swift */; };
 		9961CDC32919630A000EA35B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9961CDC22919630A000EA35B /* Assets.xcassets */; };
 		9961CDC62919630A000EA35B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9961CDC52919630A000EA35B /* Preview Assets.xcassets */; };
-		9961CDD02919630B000EA35B /* DiscogsTCATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961CDCF2919630B000EA35B /* DiscogsTCATests.swift */; };
 		9961CDDA2919630B000EA35B /* DiscogsTCAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961CDD92919630B000EA35B /* DiscogsTCAUITests.swift */; };
 		9961CDDC2919630B000EA35B /* DiscogsTCAUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961CDDB2919630B000EA35B /* DiscogsTCAUITestsLaunchTests.swift */; };
 		9961CDEB2919640B000EA35B /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9961CDEA2919640B000EA35B /* ComposableArchitecture */; };
 		9961CDEE29196431000EA35B /* InventoryFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961CDED29196431000EA35B /* InventoryFeature.swift */; };
 		9961CDF929196693000EA35B /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 9961CDF829196693000EA35B /* Core */; };
 		9986AB0F28F8773D0081D01C /* SellersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9986AB0E28F8773D0081D01C /* SellersView.swift */; };
+		999A0F56292269BB00C2104B /* SellerSelectionFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A0F55292269BB00C2104B /* SellerSelectionFeatureTests.swift */; };
 		99D5B13528F56DB400E07E76 /* ListingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5B13428F56DB400E07E76 /* ListingsViewModel.swift */; };
 		99D5B13928F5EBD900E07E76 /* ListingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5B13828F5EBD900E07E76 /* ListingItemView.swift */; };
 		99DE2C1A28F6E07400EA0DD2 /* ListingItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE2C1928F6E07400EA0DD2 /* ListingItemViewModel.swift */; };
@@ -84,6 +85,7 @@
 		9922116928CDD2AD00F32005 /* ReleaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseView.swift; sourceTree = "<group>"; };
 		9922116B28D26A0600F32005 /* ListingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsView.swift; sourceTree = "<group>"; };
 		99382DA0290940C4008F3376 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		9952FE8D29228F940000145B /* InventoryFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryFeatureTests.swift; sourceTree = "<group>"; };
 		9961CD78291514C2000EA35B /* Keys.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Keys.xcconfig; sourceTree = "<group>"; };
 		9961CD7929151598000EA35B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9961CDBC2919630A000EA35B /* DiscogsTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiscogsTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,13 +94,13 @@
 		9961CDC22919630A000EA35B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9961CDC52919630A000EA35B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9961CDCB2919630B000EA35B /* DiscogsTCATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscogsTCATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9961CDCF2919630B000EA35B /* DiscogsTCATests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsTCATests.swift; sourceTree = "<group>"; };
 		9961CDD52919630B000EA35B /* DiscogsTCAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiscogsTCAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9961CDD92919630B000EA35B /* DiscogsTCAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsTCAUITests.swift; sourceTree = "<group>"; };
 		9961CDDB2919630B000EA35B /* DiscogsTCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsTCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9961CDED29196431000EA35B /* InventoryFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryFeature.swift; sourceTree = "<group>"; };
 		9961CDF7291965FA000EA35B /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Core; sourceTree = "<group>"; };
 		9986AB0E28F8773D0081D01C /* SellersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellersView.swift; sourceTree = "<group>"; };
+		999A0F55292269BB00C2104B /* SellerSelectionFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerSelectionFeatureTests.swift; sourceTree = "<group>"; };
 		99D5B13428F56DB400E07E76 /* ListingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsViewModel.swift; sourceTree = "<group>"; };
 		99D5B13828F5EBD900E07E76 /* ListingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingItemView.swift; sourceTree = "<group>"; };
 		99DE2C1928F6E07400EA0DD2 /* ListingItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingItemViewModel.swift; sourceTree = "<group>"; };
@@ -257,7 +259,8 @@
 		9961CDCE2919630B000EA35B /* DiscogsTCATests */ = {
 			isa = PBXGroup;
 			children = (
-				9961CDCF2919630B000EA35B /* DiscogsTCATests.swift */,
+				999A0F55292269BB00C2104B /* SellerSelectionFeatureTests.swift */,
+				9952FE8D29228F940000145B /* InventoryFeatureTests.swift */,
 			);
 			path = DiscogsTCATests;
 			sourceTree = "<group>";
@@ -471,6 +474,7 @@
 					};
 					9961CDCA2919630B000EA35B = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 						TestTargetID = 9961CDBB2919630A000EA35B;
 					};
 					9961CDD42919630B000EA35B = {
@@ -604,7 +608,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9961CDD02919630B000EA35B /* DiscogsTCATests.swift in Sources */,
+				999A0F56292269BB00C2104B /* SellerSelectionFeatureTests.swift in Sources */,
+				9952FE8E29228F940000145B /* InventoryFeatureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,6 +772,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Discogs/Preview Content\"";
+				DEVELOPMENT_TEAM = 42ZWPL85E8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Discogs/Info.plist;
@@ -797,6 +803,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Discogs/Preview Content\"";
+				DEVELOPMENT_TEAM = 42ZWPL85E8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Discogs/Info.plist;
@@ -900,6 +907,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DiscogsTCA/Preview Content\"";
+				DEVELOPMENT_TEAM = 42ZWPL85E8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DiscogsTCA/Info.plist;
@@ -931,6 +939,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DiscogsTCA/Preview Content\"";
+				DEVELOPMENT_TEAM = 42ZWPL85E8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DiscogsTCA/Info.plist;
@@ -958,14 +967,21 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.DiscogsTCATests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DiscogsTCA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DiscogsTCA";
@@ -977,10 +993,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.DiscogsTCATests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1101,7 +1123,7 @@
 			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.45.0;
+				minimumVersion = 1.9.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

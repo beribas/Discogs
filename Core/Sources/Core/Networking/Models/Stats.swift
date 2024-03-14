@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Stats: Decodable {
+public struct Stats: Decodable, Sendable {
     public let lowestPrice: Price
     public let numForSale: Int
     public let blockedFromSale: Bool

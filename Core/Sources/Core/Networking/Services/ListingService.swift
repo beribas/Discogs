@@ -7,7 +7,7 @@ enum NetworkingError: Error {
     case unknown
 }
 
-public protocol ListingServiceType {
+public protocol ListingServiceType: Actor {
     func getInventory(username: String, page: Int) async throws -> InventoryResponse
     func getStats(releaseId: Int) async throws -> Stats
 }
@@ -25,7 +25,8 @@ public actor ListingService: ListingServiceType {
     }
     
     public func getInventory(username: String, page: Int) async throws -> InventoryResponse {
-        var request = URLRequest(url: URL(string: "https://api.discogs.com/users/\(username)/inventory?sort=price&sort_order=desc&page=\(page)&per_page=100")!)
+        print("➡️ Requesting inventory for \(username) page \(page)")
+        var request = URLRequest(url: URL(string: "https://api.discogs.com/users/\(username)/inventory?sort=price&sort_order=desc&page=\(page)&per_page=25")!)
         request.setValue(oauthtoken, forHTTPHeaderField: "Authorization")
 
         return try await network.send(request: request, decodable: InventoryResponse.self)

@@ -1,7 +1,7 @@
 import Foundation
 
 // MARK: - Price
-public struct Price: Codable, Equatable {
+public struct Price: Codable, Equatable, Sendable {
     public let currency: String
     public let value: Double
 }

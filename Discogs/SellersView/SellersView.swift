@@ -25,7 +25,7 @@ struct SellersView: View {
             .padding()
             .navigationTitle("Seller")
             .navigationDestination(isPresented: $submitted) {
-                ListingsView(viewModel: .init(username: sellerName))
+                ListingsView(username: sellerName)
                     .environmentObject(ImageLoader())
                     .onAppear {
                         let lowercased = sellerName.lowercased()
@@ -35,7 +35,7 @@ struct SellersView: View {
                     }
             }
             .navigationDestination(for: String.self) { search in
-                ListingsView(viewModel: .init(username: search))
+                ListingsView(username: search)
                     .environmentObject(ImageLoader())
             }
         }

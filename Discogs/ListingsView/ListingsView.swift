@@ -13,8 +13,22 @@ extension Listing: Identifiable, Hashable {
 }
 
 struct ListingsView: View {
+    private let username: String
+    private let service: ListingServiceType
+    private let rateLimitHandler: RateLimitHandlerType
     @StateObject var viewModel: ListingsViewModel
-    
+
+    init(
+        username: String,
+        service: ListingServiceType = Dependencies.shared.listingService,
+        rateLimitHandler: RateLimitHandlerType = Dependencies.shared.rateLimitHandler
+    ){
+        self.username = username
+        self.service = service
+        self.rateLimitHandler = rateLimitHandler
+        _viewModel = .init(wrappedValue: .init(username: username, service: service, rateLimitHandler: rateLimitHandler))
+    }
+
     var body: some View {
         List {
             ForEach(0..<viewModel.listingItems.count, id: \.self) { index in
@@ -27,7 +41,7 @@ struct ListingsView: View {
                 }
             }
             if viewModel.fetchingAdditionalItems {
-                ProgressView().foregroundColor(.black)
+                ProgressView().foregroundColor(.secondary).id(UUID())
             }
         }
         .refreshable {
@@ -58,32 +72,34 @@ struct ListingsView: View {
                 }
             }
         }
+        .task(id: "once") {
+            await viewModel.fetch()
+        }
         .alert(
             isPresented: $viewModel.showError,
-            error: viewModel.errorMessage) { _ in
+            error: viewModel.errorMessage
+        ) { _ in
 
-            } message: { error in
-                Text(error.recoverySuggestion ?? "")
-            }
-            .task {
-                await viewModel.fetch()
-            }
+        } message: { error in
+            Text(error.recoverySuggestion ?? "")
+        }
+
     }
 }
 
 struct ListingsView_Previews: PreviewProvider {
     static var previews: some View {
-        ListingsView(viewModel: .init(username: "Skotty25", service: ServiceMock()))
+        ListingsView(username: "Skotty25", service: ServiceMock())
             .environmentObject(ImageLoader())
             .previewDisplayName("With some values")
-        ListingsView(viewModel: viewModelWithRateLimitMock())
+        ListingsView(username: "Skotty25", service: ServiceMock(), rateLimitHandler: RateLimitHandlerMock())
             .environmentObject(ImageLoader())
             .previewDisplayName("Rate limit active")
     }
 }
 
 extension ListingsView_Previews {
-    class ServiceMock: ListingServiceType {
+    actor ServiceMock: ListingServiceType {
         func getInventory(username: String, page: Int) async throws -> InventoryResponse {
             .init(
                 pagination: .init(page: 1, pages: 1),
@@ -97,13 +113,8 @@ extension ListingsView_Previews {
     }
 
     actor RateLimitHandlerMock: RateLimitHandlerType {
-        var rateLimitTimerSecondsLeft: AnyPublisher<Int?, Never> {
+        nonisolated var rateLimitTimerSecondsLeft: AnyPublisher<Int?, Never> {
             Just(59).eraseToAnyPublisher()
         }
-    }
-
-    static func viewModelWithRateLimitMock() -> ListingsViewModel {
-        let handlerMock = RateLimitHandlerMock()
-        return .init(username: "Skotty25", service: ServiceMock(), rateLimitHandler: handlerMock)
     }
 }

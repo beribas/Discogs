@@ -7,12 +7,40 @@
 		<key>Discogs.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>1</integer>
 		</dict>
 		<key>DiscogsTCA.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>9922113528CCE8BA00F32005</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9922114528CCE8BB00F32005</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9922114F28CCE8BB00F32005</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9961CDBB2919630A000EA35B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9961CDCA2919630B000EA35B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

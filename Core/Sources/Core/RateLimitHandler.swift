@@ -6,11 +6,11 @@ public struct RateLimitReachedError: Error {
 }
 
 public protocol RateLimitHandlerType: Actor {
-    var rateLimitTimerSecondsLeft: AnyPublisher<Int?, Never> { get }
+    nonisolated var rateLimitTimerSecondsLeft: AnyPublisher<Int?, Never> { get }
 }
 
 public actor RateLimitHandler: RateLimitHandlerType, ResponseListener, RequestValidator {
-    public var rateLimitTimerSecondsLeft: AnyPublisher<Int?, Never> { timerSubject.eraseToAnyPublisher() }
+    nonisolated public var rateLimitTimerSecondsLeft: AnyPublisher<Int?, Never> { timerSubject.eraseToAnyPublisher() }
     private let timerSubject = PassthroughSubject<Int?, Never>()
     private let timer = Timer.publish(every: 1, on: .main, in: .default)
     private var lastLimitReachedDate: Date?

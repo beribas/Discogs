@@ -19,6 +19,7 @@ class ListingsViewModel: ObservableObject {
     private var pages = -1
     private var currentPage = 0
     private var timerSubscription: AnyCancellable?
+    private var listingsSubscription: AnyCancellable?
 
     let username: String
     
@@ -30,20 +31,20 @@ class ListingsViewModel: ObservableObject {
         self.username = username
         self.service = service
 
-        Task {
-            timerSubscription = await rateLimitHandler.rateLimitTimerSecondsLeft
-                .sink(receiveValue: { [weak self] secondsLeft in
-                    self?.rateLimitSecondsLeft = secondsLeft
-                })
-        }
+        timerSubscription = rateLimitHandler.rateLimitTimerSecondsLeft
+            .sink { [weak self] secondsLeft in
+                self?.rateLimitSecondsLeft = secondsLeft
+            }
 
-        Publishers.CombineLatest($originalListingItems, $searchTerm)
+        listingsSubscription = Publishers.CombineLatest($originalListingItems, $searchTerm)
             .map { originalListings, searchTerm in
                 originalListings.filter { listing in
                     searchTerm.isEmpty ? true : listing.title.contains(searchTerm)
                 }
             }
-            .assign(to: &$listingItems)
+            .sink { [weak self] items in
+                self?.listingItems = items
+            }
     }
 
     @Published var listingItems: [ListingItemViewModel] = []
@@ -57,9 +58,8 @@ class ListingsViewModel: ObservableObject {
     @Published private(set) var rateLimitSecondsLeft: Int?
     
     @MainActor func fetch() async {
-        defer {
-            initialFetch = false
-            fetchingAdditionalItems = false
+        guard !fetchingAdditionalItems, !initialFetch else {
+            return
         }
         let pageToFetch: Int
         if pages == -1 {
@@ -72,6 +72,8 @@ class ListingsViewModel: ObservableObject {
             return
         }
         await _fetch(page: pageToFetch)
+        initialFetch = false
+        fetchingAdditionalItems = false
     }
 
     @MainActor func itemAppeared(at index: Int) {
@@ -91,6 +93,7 @@ class ListingsViewModel: ObservableObject {
 
 private extension ListingsViewModel {
     @MainActor func _fetch(page: Int) async {
+        print("called \(#function) with page \(page)")
         do {
             let inventoryResponse = try await service.getInventory(username: username, page: page)
             let newItems = inventoryResponse.listings
