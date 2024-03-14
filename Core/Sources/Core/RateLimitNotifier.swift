@@ -5,14 +5,14 @@ public struct RateLimitReachedError: Error {
     let secondsLeft: Int
 }
 
-public protocol RateLimitHandlerType: Actor {
+public protocol RateLimitNotifierType: Actor {
     nonisolated var rateLimitTimerSecondsLeft: AnyPublisher<Int?, Never> { get }
 }
 
-public actor RateLimitHandler: RateLimitHandlerType, ResponseListener, RequestValidator {
+public actor RateLimitNotifier: RateLimitNotifierType, ResponseListener, RequestValidator {
     nonisolated public var rateLimitTimerSecondsLeft: AnyPublisher<Int?, Never> { timerSubject.eraseToAnyPublisher() }
     private let timerSubject = PassthroughSubject<Int?, Never>()
-    private let timer = Timer.publish(every: 1, on: .main, in: .default)
+    private let timer = Timer.publish(every: 1, on: .main, in: .common)
     private var lastLimitReachedDate: Date?
     private var cancellable: AnyCancellable?
     private static var rateLimit = 60
@@ -22,6 +22,7 @@ public actor RateLimitHandler: RateLimitHandlerType, ResponseListener, RequestVa
             return
         }
 
+        print("⬅️ Response headers for \(httpResponse.url?.absoluteString ?? "UNKNOWN")")
         [
             "X-Discogs-Ratelimit-Used",
             "X-Discogs-Ratelimit-Remaining"
@@ -54,7 +55,7 @@ public actor RateLimitHandler: RateLimitHandlerType, ResponseListener, RequestVa
         if cancellable != nil {
             return
         }
-        cancellable?.cancel()
+        cancellable = nil
         cancellable = timer
             .autoconnect()
             .scan(Self.rateLimit) { counter, _ in
@@ -65,6 +66,7 @@ public actor RateLimitHandler: RateLimitHandlerType, ResponseListener, RequestVa
                 }
                 return nextValue
             }
+            .print("Timer subscription: ")
             .replaceError(with: 0)
             .sink { value in
                 self.timerSubject.send(value)
@@ -72,6 +74,6 @@ public actor RateLimitHandler: RateLimitHandlerType, ResponseListener, RequestVa
     }
 
     private func stopTimer() {
-        cancellable?.cancel()
+        cancellable = nil
     }
 }

@@ -26,7 +26,7 @@ class ListingsViewModel: ObservableObject {
     init(
         username: String,
         service: ListingServiceType = Dependencies.shared.listingService,
-        rateLimitHandler: RateLimitHandlerType = Dependencies.shared.rateLimitHandler
+        rateLimitHandler: RateLimitNotifierType = Dependencies.shared.rateLimitHandler
     ) {
         self.username = username
         self.service = service
@@ -93,7 +93,6 @@ class ListingsViewModel: ObservableObject {
 
 private extension ListingsViewModel {
     @MainActor func _fetch(page: Int) async {
-        print("called \(#function) with page \(page)")
         do {
             let inventoryResponse = try await service.getInventory(username: username, page: page)
             let newItems = inventoryResponse.listings

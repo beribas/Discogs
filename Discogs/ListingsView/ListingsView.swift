@@ -15,13 +15,13 @@ extension Listing: Identifiable, Hashable {
 struct ListingsView: View {
     private let username: String
     private let service: ListingServiceType
-    private let rateLimitHandler: RateLimitHandlerType
+    private let rateLimitHandler: RateLimitNotifierType
     @StateObject var viewModel: ListingsViewModel
 
     init(
         username: String,
         service: ListingServiceType = Dependencies.shared.listingService,
-        rateLimitHandler: RateLimitHandlerType = Dependencies.shared.rateLimitHandler
+        rateLimitHandler: RateLimitNotifierType = Dependencies.shared.rateLimitHandler
     ){
         self.username = username
         self.service = service
@@ -112,7 +112,7 @@ extension ListingsView_Previews {
         }
     }
 
-    actor RateLimitHandlerMock: RateLimitHandlerType {
+    actor RateLimitHandlerMock: RateLimitNotifierType {
         nonisolated var rateLimitTimerSecondsLeft: AnyPublisher<Int?, Never> {
             Just(59).eraseToAnyPublisher()
         }
