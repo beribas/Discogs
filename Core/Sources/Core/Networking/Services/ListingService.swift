@@ -1,12 +1,6 @@
 import Foundation
 import Combine
 
-enum NetworkingError: Error {
-    case badResponseCode(Int)
-    case decodingError(Error)
-    case unknown
-}
-
 public protocol ListingServiceType: Actor {
     func getInventory(username: String, page: Int) async throws -> InventoryResponse
     func getStats(releaseId: Int) async throws -> Stats
