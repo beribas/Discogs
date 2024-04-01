@@ -2,12 +2,12 @@ import XCTest
 import ComposableArchitecture
 @testable import DiscogsTCA
 
-@MainActor
 final class InventoryFeatureTests: XCTestCase {
+    @MainActor
     func test_onAppear() async throws {
         let store = TestStore(
             initialState: InventoryFeature.State(username: "USER", listings: []),
-            reducer: InventoryFeature()
+            reducer: { InventoryFeature() }
         )
 
         await store.send(.onAppear)

@@ -13,27 +13,23 @@ extension Listing: Identifiable, Hashable {
 }
 
 struct InventoryView: View {
-    let store: StoreOf<InventoryFeature>
+    @Bindable var store: StoreOf<InventoryFeature>
     var body: some View {
-        WithViewStore(store, observe: { $0 }) { viewStore in
-            List(viewStore.listings) { listing in
-                Text(listing.release.releaseDescription)
-            }
-            .navigationTitle(viewStore.username)
-            .onAppear {
-                viewStore.send(.onAppear)
-            }
+        List(store.listings) { listing in
+            Text(listing.release.releaseDescription)
+        }
+        .navigationTitle(store.username)
+        .alert($store.scope(state: \.alert, action: \.alert))
+        .onAppear {
+            store.send(.onAppear)
         }
     }
 }
 
-struct InventoryView_Previews: PreviewProvider {
-    static var previews: some View {
-        InventoryView(
-            store: Store(
-                initialState: InventoryFeature.State(username: "TEST", listings: []),
-                reducer: InventoryFeature()
-            )
-        )
-    }
+#Preview {
+    InventoryView(
+        store: Store(initialState: InventoryFeature.State(username: "TEST", listings: []), reducer: {
+
+        })
+    )
 }

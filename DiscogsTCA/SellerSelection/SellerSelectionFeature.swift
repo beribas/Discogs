@@ -1,34 +1,32 @@
 import ComposableArchitecture
 
-struct SellerSelectionFeature: ReducerProtocol {
+struct SellerSelectionFeature: Reducer {
+    @ObservableState
     struct State: Equatable {
         var username: String = ""
-        var navigationToInventoryActive = false
-        var inventoryState: InventoryFeature.State?
+        var path = StackState<InventoryFeature.State>()
     }
 
+    @CasePathable
     enum Action {
         case textChanged(String)
-        case setNavigationToInventory(Bool)
-        case inventory(InventoryFeature.Action)
+        case setNavigationToInventory
+        case path(StackAction<InventoryFeature.State, InventoryFeature.Action>)
     }
 
-    var body: some ReducerProtocol<State, Action> {
+    var body: some ReducerOf<Self> {
         Reduce { state, action in
             switch action {
             case .textChanged(let string):
                 state.username = string
-            case .setNavigationToInventory(true):
-                state.navigationToInventoryActive = true
-                state.inventoryState = .init(username: state.username, listings: [])
-            case .setNavigationToInventory(false):
-                state.navigationToInventoryActive = false
-                state.inventoryState = nil
-            case .inventory: break
+            case .setNavigationToInventory:
+                state.path.append(.init(username: state.username, listings: []))
+            case .path:
+                break
             }
             return .none
         }
-        .ifLet(\.inventoryState, action: /SellerSelectionFeature.Action.inventory) {
+        .forEach(\.path, action: \.path) {
             InventoryFeature()
         }
     }
