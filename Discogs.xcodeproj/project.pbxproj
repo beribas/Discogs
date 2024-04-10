@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		990B7B7F2BC6A6C30073085C /* MacDiscogsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B7B7E2BC6A6C30073085C /* MacDiscogsApp.swift */; };
+		990B7B812BC6A6C30073085C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B7B802BC6A6C30073085C /* ContentView.swift */; };
+		990B7B832BC6A6C40073085C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 990B7B822BC6A6C40073085C /* Assets.xcassets */; };
+		990B7B862BC6A6C40073085C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 990B7B852BC6A6C40073085C /* Preview Assets.xcassets */; };
+		990B7B912BC6A6C40073085C /* MacDiscogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B7B902BC6A6C40073085C /* MacDiscogsTests.swift */; };
+		990B7B9B2BC6A6C40073085C /* MacDiscogsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B7B9A2BC6A6C40073085C /* MacDiscogsUITests.swift */; };
+		990B7B9D2BC6A6C40073085C /* MacDiscogsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990B7B9C2BC6A6C40073085C /* MacDiscogsUITestsLaunchTests.swift */; };
+		990B7BA82BC6A6E70073085C /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 990B7BA72BC6A6E70073085C /* Core */; };
+		990B7BA92BC6A7420073085C /* SellersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9986AB0E28F8773D0081D01C /* SellersView.swift */; };
+		990B7BAA2BC6A7680073085C /* ListingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5B13828F5EBD900E07E76 /* ListingItemView.swift */; };
+		990B7BAB2BC6A7680073085C /* ListingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5B13428F56DB400E07E76 /* ListingsViewModel.swift */; };
+		990B7BAD2BC6A7680073085C /* ReleaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922116928CDD2AD00F32005 /* ReleaseView.swift */; };
+		990B7BAE2BC6A7680073085C /* ListingItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DE2C1928F6E07400EA0DD2 /* ListingItemViewModel.swift */; };
+		990B7BAF2BC6A7680073085C /* ListingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9922116B28D26A0600F32005 /* ListingsView.swift */; };
+		990B7BB02BC6A7FD0073085C /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99382DA0290940C4008F3376 /* ImageLoader.swift */; };
+		990B7BB22BC6AC940073085C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 990B7BB12BC6AC940073085C /* Info.plist */; };
 		990C18FC29196C310098532B /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 990C18FB29196C310098532B /* Core */; };
 		990C18FE29196C8C0098532B /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990C18FD29196C8C0098532B /* InventoryView.swift */; };
 		990C1902291A549A0098532B /* SellerSelectionFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990C1901291A549A0098532B /* SellerSelectionFeature.swift */; };
@@ -39,6 +55,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		990B7B8D2BC6A6C40073085C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9922112E28CCE8BA00F32005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 990B7B7B2BC6A6C30073085C;
+			remoteInfo = MacDiscogs;
+		};
+		990B7B972BC6A6C40073085C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9922112E28CCE8BA00F32005 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 990B7B7B2BC6A6C30073085C;
+			remoteInfo = MacDiscogs;
+		};
 		9922114728CCE8BB00F32005 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9922112E28CCE8BA00F32005 /* Project object */;
@@ -70,6 +100,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		990B7B7C2BC6A6C30073085C /* MacDiscogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacDiscogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		990B7B7E2BC6A6C30073085C /* MacDiscogsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDiscogsApp.swift; sourceTree = "<group>"; };
+		990B7B802BC6A6C30073085C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		990B7B822BC6A6C40073085C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		990B7B852BC6A6C40073085C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		990B7B872BC6A6C40073085C /* MacDiscogs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacDiscogs.entitlements; sourceTree = "<group>"; };
+		990B7B8C2BC6A6C40073085C /* MacDiscogsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacDiscogsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		990B7B902BC6A6C40073085C /* MacDiscogsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDiscogsTests.swift; sourceTree = "<group>"; };
+		990B7B962BC6A6C40073085C /* MacDiscogsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacDiscogsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		990B7B9A2BC6A6C40073085C /* MacDiscogsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDiscogsUITests.swift; sourceTree = "<group>"; };
+		990B7B9C2BC6A6C40073085C /* MacDiscogsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacDiscogsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		990B7BB12BC6AC940073085C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		990C18FD29196C8C0098532B /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
 		990C18FF29197E1A0098532B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		990C1901291A549A0098532B /* SellerSelectionFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerSelectionFeature.swift; sourceTree = "<group>"; };
@@ -109,6 +151,28 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		990B7B792BC6A6C30073085C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				990B7BA82BC6A6E70073085C /* Core in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		990B7B892BC6A6C40073085C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		990B7B932BC6A6C40073085C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9922113328CCE8BA00F32005 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,6 +221,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		990B7B7D2BC6A6C30073085C /* MacDiscogs */ = {
+			isa = PBXGroup;
+			children = (
+				990B7B7E2BC6A6C30073085C /* MacDiscogsApp.swift */,
+				990B7B802BC6A6C30073085C /* ContentView.swift */,
+				990B7B822BC6A6C40073085C /* Assets.xcassets */,
+				990B7B872BC6A6C40073085C /* MacDiscogs.entitlements */,
+				990B7B842BC6A6C40073085C /* Preview Content */,
+				990B7BB12BC6AC940073085C /* Info.plist */,
+			);
+			path = MacDiscogs;
+			sourceTree = "<group>";
+		};
+		990B7B842BC6A6C40073085C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				990B7B852BC6A6C40073085C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		990B7B8F2BC6A6C40073085C /* MacDiscogsTests */ = {
+			isa = PBXGroup;
+			children = (
+				990B7B902BC6A6C40073085C /* MacDiscogsTests.swift */,
+			);
+			path = MacDiscogsTests;
+			sourceTree = "<group>";
+		};
+		990B7B992BC6A6C40073085C /* MacDiscogsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				990B7B9A2BC6A6C40073085C /* MacDiscogsUITests.swift */,
+				990B7B9C2BC6A6C40073085C /* MacDiscogsUITestsLaunchTests.swift */,
+			);
+			path = MacDiscogsUITests;
+			sourceTree = "<group>";
+		};
 		990C1900291A547F0098532B /* SellerSelection */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +279,9 @@
 				9961CDBD2919630A000EA35B /* DiscogsTCA */,
 				9961CDCE2919630B000EA35B /* DiscogsTCATests */,
 				9961CDD82919630B000EA35B /* DiscogsTCAUITests */,
+				990B7B7D2BC6A6C30073085C /* MacDiscogs */,
+				990B7B8F2BC6A6C40073085C /* MacDiscogsTests */,
+				990B7B992BC6A6C40073085C /* MacDiscogsUITests */,
 				9922113728CCE8BA00F32005 /* Products */,
 				9961CDE92919640B000EA35B /* Frameworks */,
 			);
@@ -191,6 +296,9 @@
 				9961CDBC2919630A000EA35B /* DiscogsTCA.app */,
 				9961CDCB2919630B000EA35B /* DiscogsTCATests.xctest */,
 				9961CDD52919630B000EA35B /* DiscogsTCAUITests.xctest */,
+				990B7B7C2BC6A6C30073085C /* MacDiscogs.app */,
+				990B7B8C2BC6A6C40073085C /* MacDiscogsTests.xctest */,
+				990B7B962BC6A6C40073085C /* MacDiscogsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -346,6 +454,62 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		990B7B7B2BC6A6C30073085C /* MacDiscogs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 990B7B9E2BC6A6C40073085C /* Build configuration list for PBXNativeTarget "MacDiscogs" */;
+			buildPhases = (
+				990B7B782BC6A6C30073085C /* Sources */,
+				990B7B792BC6A6C30073085C /* Frameworks */,
+				990B7B7A2BC6A6C30073085C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacDiscogs;
+			packageProductDependencies = (
+				990B7BA72BC6A6E70073085C /* Core */,
+			);
+			productName = MacDiscogs;
+			productReference = 990B7B7C2BC6A6C30073085C /* MacDiscogs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		990B7B8B2BC6A6C40073085C /* MacDiscogsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 990B7BA12BC6A6C40073085C /* Build configuration list for PBXNativeTarget "MacDiscogsTests" */;
+			buildPhases = (
+				990B7B882BC6A6C40073085C /* Sources */,
+				990B7B892BC6A6C40073085C /* Frameworks */,
+				990B7B8A2BC6A6C40073085C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				990B7B8E2BC6A6C40073085C /* PBXTargetDependency */,
+			);
+			name = MacDiscogsTests;
+			productName = MacDiscogsTests;
+			productReference = 990B7B8C2BC6A6C40073085C /* MacDiscogsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		990B7B952BC6A6C40073085C /* MacDiscogsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 990B7BA42BC6A6C40073085C /* Build configuration list for PBXNativeTarget "MacDiscogsUITests" */;
+			buildPhases = (
+				990B7B922BC6A6C40073085C /* Sources */,
+				990B7B932BC6A6C40073085C /* Frameworks */,
+				990B7B942BC6A6C40073085C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				990B7B982BC6A6C40073085C /* PBXTargetDependency */,
+			);
+			name = MacDiscogsUITests;
+			productName = MacDiscogsUITests;
+			productReference = 990B7B962BC6A6C40073085C /* MacDiscogsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		9922113528CCE8BA00F32005 /* Discogs */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9922115A28CCE8BB00F32005 /* Build configuration list for PBXNativeTarget "Discogs" */;
@@ -469,6 +633,17 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					990B7B7B2BC6A6C30073085C = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					990B7B8B2BC6A6C40073085C = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 990B7B7B2BC6A6C30073085C;
+					};
+					990B7B952BC6A6C40073085C = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 990B7B7B2BC6A6C30073085C;
+					};
 					9922113528CCE8BA00F32005 = {
 						CreatedOnToolsVersion = 14.0;
 					};
@@ -516,11 +691,38 @@
 				9961CDBB2919630A000EA35B /* DiscogsTCA */,
 				9961CDCA2919630B000EA35B /* DiscogsTCATests */,
 				9961CDD42919630B000EA35B /* DiscogsTCAUITests */,
+				990B7B7B2BC6A6C30073085C /* MacDiscogs */,
+				990B7B8B2BC6A6C40073085C /* MacDiscogsTests */,
+				990B7B952BC6A6C40073085C /* MacDiscogsUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		990B7B7A2BC6A6C30073085C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				990B7B862BC6A6C40073085C /* Preview Assets.xcassets in Resources */,
+				990B7B832BC6A6C40073085C /* Assets.xcassets in Resources */,
+				990B7BB22BC6AC940073085C /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		990B7B8A2BC6A6C40073085C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		990B7B942BC6A6C40073085C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9922113428CCE8BA00F32005 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -570,6 +772,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		990B7B782BC6A6C30073085C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				990B7BAA2BC6A7680073085C /* ListingItemView.swift in Sources */,
+				990B7BAB2BC6A7680073085C /* ListingsViewModel.swift in Sources */,
+				990B7BAD2BC6A7680073085C /* ReleaseView.swift in Sources */,
+				990B7BAE2BC6A7680073085C /* ListingItemViewModel.swift in Sources */,
+				990B7BAF2BC6A7680073085C /* ListingsView.swift in Sources */,
+				990B7BB02BC6A7FD0073085C /* ImageLoader.swift in Sources */,
+				990B7B812BC6A6C30073085C /* ContentView.swift in Sources */,
+				990B7B7F2BC6A6C30073085C /* MacDiscogsApp.swift in Sources */,
+				990B7BA92BC6A7420073085C /* SellersView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		990B7B882BC6A6C40073085C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				990B7B912BC6A6C40073085C /* MacDiscogsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		990B7B922BC6A6C40073085C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				990B7B9B2BC6A6C40073085C /* MacDiscogsUITests.swift in Sources */,
+				990B7B9D2BC6A6C40073085C /* MacDiscogsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9922113228CCE8BA00F32005 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -637,6 +872,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		990B7B8E2BC6A6C40073085C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 990B7B7B2BC6A6C30073085C /* MacDiscogs */;
+			targetProxy = 990B7B8D2BC6A6C40073085C /* PBXContainerItemProxy */;
+		};
+		990B7B982BC6A6C40073085C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 990B7B7B2BC6A6C30073085C /* MacDiscogs */;
+			targetProxy = 990B7B972BC6A6C40073085C /* PBXContainerItemProxy */;
+		};
 		9922114828CCE8BB00F32005 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9922113528CCE8BA00F32005 /* Discogs */;
@@ -660,6 +905,171 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		990B7B9F2BC6A6C40073085C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacDiscogs/MacDiscogs.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacDiscogs/Preview Content\"";
+				DEVELOPMENT_TEAM = 42ZWPL85E8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MacDiscogs/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.MacDiscogs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		990B7BA02BC6A6C40073085C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacDiscogs/MacDiscogs.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacDiscogs/Preview Content\"";
+				DEVELOPMENT_TEAM = 42ZWPL85E8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MacDiscogs/Info.plist;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.MacDiscogs;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		990B7BA22BC6A6C40073085C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42ZWPL85E8;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.MacDiscogsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacDiscogs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MacDiscogs";
+			};
+			name = Debug;
+		};
+		990B7BA32BC6A6C40073085C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42ZWPL85E8;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.MacDiscogsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacDiscogs.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MacDiscogs";
+			};
+			name = Release;
+		};
+		990B7BA52BC6A6C40073085C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42ZWPL85E8;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.MacDiscogsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MacDiscogs;
+			};
+			name = Debug;
+		};
+		990B7BA62BC6A6C40073085C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 42ZWPL85E8;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = oleglanger.MacDiscogsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MacDiscogs;
+			};
+			name = Release;
+		};
 		9922115828CCE8BB00F32005 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9961CD78291514C2000EA35B /* Keys.xcconfig */;
@@ -1066,6 +1476,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		990B7B9E2BC6A6C40073085C /* Build configuration list for PBXNativeTarget "MacDiscogs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				990B7B9F2BC6A6C40073085C /* Debug */,
+				990B7BA02BC6A6C40073085C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		990B7BA12BC6A6C40073085C /* Build configuration list for PBXNativeTarget "MacDiscogsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				990B7BA22BC6A6C40073085C /* Debug */,
+				990B7BA32BC6A6C40073085C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		990B7BA42BC6A6C40073085C /* Build configuration list for PBXNativeTarget "MacDiscogsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				990B7BA52BC6A6C40073085C /* Debug */,
+				990B7BA62BC6A6C40073085C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9922113128CCE8BA00F32005 /* Build configuration list for PBXProject "Discogs" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1143,6 +1580,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		990B7BA72BC6A6E70073085C /* Core */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Core;
+		};
 		990C18FB29196C310098532B /* Core */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Core;

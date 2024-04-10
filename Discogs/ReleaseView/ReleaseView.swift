@@ -37,16 +37,16 @@ struct ReleaseView: View {
         .padding()
         .navigationTitle(release.releaseDescription)
         .task {
-//            if let result = try? await ListingService().getStats(releaseId: release.id) {
-//                stats = result
-//            }
+            if let result = try? await Core.Dependencies.shared.listingService.getStats(releaseId: release.id) {
+                stats = result
+            }
         }
     }
 }
 
 struct ReleaseView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
+        NavigationStack {
             ReleaseView(release: .mock())
         }
     }

@@ -9,7 +9,11 @@ struct SellersView: View {
         NavigationStack {
             VStack(alignment: .leading, spacing: 16) {
                 TextField("Seller name", text: $sellerName)
+                #if os(iOS)
                     .textInputAutocapitalization(.never)
+                #elseif os(macOS)
+
+                #endif
                     .autocorrectionDisabled()
                     .onSubmit {
                         submitted = true
