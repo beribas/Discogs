@@ -34,7 +34,7 @@ struct InventoryFeature: Reducer {
                 state.alert = nil
                 return .run { [username = state.username] send in
                     do {
-                        let inventoryResponse = try await listingService.getInventory(username: username, page: 0)
+                        let inventoryResponse = try await listingService.getInventory(username: username, page: 1)
                         await send(.inventoryLoaded(.success(inventoryResponse)))
                     } catch {
                         await send(.inventoryLoaded(.failure(InventoryLoadingError())))
@@ -69,11 +69,20 @@ extension DependencyValues {
 }
 
 actor ServiceMock: ListingServiceType {
+
+    init(getInventoryResponse: Result<InventoryResponse, Error> = .success(.mock())) {
+        self.getInventoryResponse = getInventoryResponse
+    }
+    private var getInventoryResponse: Result<InventoryResponse, Error>
+    var receivedGetInventoryParams: [(username: String, page: Int)] = []
     func getInventory(username: String, page: Int) async throws -> InventoryResponse {
-        .init(
-            pagination: .init(page: 1, pages: 1),
-            listings: [.mock(), .mock()]
-        )
+        receivedGetInventoryParams.append((username: username, page: page))
+        switch getInventoryResponse {
+        case .success(let response):
+            return response
+        case .failure(let error):
+            throw error
+        }
     }
 
     func getStats(releaseId: Int) async throws -> Stats {

@@ -21,3 +21,14 @@ extension InventoryResponse {
         public let pages: Int
     }
 }
+
+// MARK: - Mocks
+
+public extension InventoryResponse {
+    static func mock() -> Self {
+        .init(
+            pagination: .init(page: 1, pages: 1),
+            listings: [.mock(), .mock()]
+        )
+    }
+}

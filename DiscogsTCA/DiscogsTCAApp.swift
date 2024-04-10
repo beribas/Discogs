@@ -6,7 +6,7 @@ struct DiscogsTCAApp: App {
     var body: some Scene {
         WindowGroup {
             SellerSelectionView(
-                store: Store(initialState: .init(username: "")) {
+                store: Store(initialState: .init()) {
                     SellerSelectionFeature()
                         ._printChanges()
                 }

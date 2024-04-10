@@ -30,6 +30,7 @@
 		9961CDEB2919640B000EA35B /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 9961CDEA2919640B000EA35B /* ComposableArchitecture */; };
 		9961CDEE29196431000EA35B /* InventoryFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9961CDED29196431000EA35B /* InventoryFeature.swift */; };
 		9961CDF929196693000EA35B /* Core in Frameworks */ = {isa = PBXBuildFile; productRef = 9961CDF829196693000EA35B /* Core */; };
+		997B063C2BBAD4CB005BC966 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 997B063B2BBAD4CB005BC966 /* UserDefault.swift */; };
 		9986AB0F28F8773D0081D01C /* SellersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9986AB0E28F8773D0081D01C /* SellersView.swift */; };
 		999A0F56292269BB00C2104B /* SellerSelectionFeatureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A0F55292269BB00C2104B /* SellerSelectionFeatureTests.swift */; };
 		99D5B13528F56DB400E07E76 /* ListingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D5B13428F56DB400E07E76 /* ListingsViewModel.swift */; };
@@ -99,6 +100,7 @@
 		9961CDDB2919630B000EA35B /* DiscogsTCAUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscogsTCAUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9961CDED29196431000EA35B /* InventoryFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryFeature.swift; sourceTree = "<group>"; };
 		9961CDF7291965FA000EA35B /* Core */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Core; sourceTree = "<group>"; };
+		997B063B2BBAD4CB005BC966 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		9986AB0E28F8773D0081D01C /* SellersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellersView.swift; sourceTree = "<group>"; };
 		999A0F55292269BB00C2104B /* SellerSelectionFeatureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SellerSelectionFeatureTests.swift; sourceTree = "<group>"; };
 		99D5B13428F56DB400E07E76 /* ListingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingsViewModel.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 		9961CDBD2919630A000EA35B /* DiscogsTCA */ = {
 			isa = PBXGroup;
 			children = (
+				997B063A2BBAD4BD005BC966 /* Shared */,
 				990C1900291A547F0098532B /* SellerSelection */,
 				990C18FF29197E1A0098532B /* Info.plist */,
 				9961CDEC29196420000EA35B /* Inventory */,
@@ -288,6 +291,14 @@
 				990C18FD29196C8C0098532B /* InventoryView.swift */,
 			);
 			path = Inventory;
+			sourceTree = "<group>";
+		};
+		997B063A2BBAD4BD005BC966 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				997B063B2BBAD4CB005BC966 /* UserDefault.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		9986AB0D28F8772C0081D01C /* SellersView */ = {
@@ -455,7 +466,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					9922113528CCE8BA00F32005 = {
@@ -596,6 +607,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				990C1904291A55350098532B /* SellerSelectionView.swift in Sources */,
+				997B063C2BBAD4CB005BC966 /* UserDefault.swift in Sources */,
 				9961CDEE29196431000EA35B /* InventoryFeature.swift in Sources */,
 				9961CDC12919630A000EA35B /* ContentView.swift in Sources */,
 				990C1902291A549A0098532B /* SellerSelectionFeature.swift in Sources */,

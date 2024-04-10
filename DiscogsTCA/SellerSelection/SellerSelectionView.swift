@@ -3,6 +3,7 @@ import ComposableArchitecture
 
 struct SellerSelectionView: View {
     @Bindable var store: StoreOf<SellerSelectionFeature>
+
     var body: some View {
         NavigationStack(path: $store.scope(state: \.path, action: \.path)) {
             VStack(alignment: .leading, spacing: 16) {
@@ -14,6 +15,11 @@ struct SellerSelectionView: View {
                 .autocorrectionDisabled()
                 .onSubmit {
                     store.send(.setNavigationToInventory)
+                }
+                ForEach(store.previousSearches, id: \.self) { search in
+                    NavigationLink(value: search) {
+                        Text(search)
+                    }
                 }
                 Spacer()
             }
